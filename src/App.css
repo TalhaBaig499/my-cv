@@ -1,38 +1,166 @@
-.App {
+body{
+  background-image: linear-gradient(to top right, #f1c4cc9e, #b9d9e3a6);
+  background-repeat: no-repeat;
+  /* background-size: 100% 100vh; */
+}
+.container{
+   padding: 5rem 0rem;
+}
+.bg-white{
+  background-color: #fff;
+}
+.rounded{
+  border-radius: 20px;
+}
+.text-center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social-media{
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.social-media li{
+  /* display: inline; */
+  background-color: #f3f6f6;
+  padding: 5px 8px 3px;
+  border-radius: 8px;
 }
+.social-media li:hover{
+  background-color: #1b74e4;
+}
+.social-media li svg:nth-child(1){
+  fill: #1b74e4;
+}
+.social-media li:nth-child(2) svg{
+  fill: #e12a72;
+}
+.social-media li:nth-child(3) svg{
+  fill: #1b74e4;
+}
+.social-media li:nth-child(4) svg{
+  fill: #144679;
+}
+.social-media li:hover svg{
+  fill: white;
+}
+.bg-light{
+  background-color: #f3f6f6;
+}
+.rounded-1{
+  border-radius: 5px;
+}
+.border-bottom{
+  border-bottom: 1px solid gainsboro;
+}
+.name{
+  font-size: 18px;
+  font-weight: 600;
+}
+.contect li svg{
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px #d3cccc59;
+  padding: 4px 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.contect li:nth-child(1) svg{
+  color: #E93B81;
+}
+.contect li:nth-child(2) svg{
+  color: #6AB5B9;
+}
+.contect li:nth-child(3) svg{
+  color: #E93B81;
+}
+.contect li:nth-child(4) svg{
+  color: #C17CEB;
+}
+.contect li svg:hover{
+  background-color: #1b74e4;
+  fill: white;
+}
+.text-light{
+  color: var(--bs-gray-600);
+}
+a{
+  text-decoration: none;
+}
+.text-dark{
+  color: var(--bs-black);
+}
+.btn1{
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+  line-height: 27px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.ContactUs form {
+  background-color: #f3f6f6;  
+  padding: 40px;
+  border-radius: 20px;
+}
+.pagetitle {
+  position: relative; 
+  font-size: 36px;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pagetitle::after {
+  content: '';
+  position: absolute;
+  left: 165px;
+  width: 25%;
+  height: 4px;
+  top: 20px;
+  background: linear-gradient(to right, #fa5252, #dd2476);
+  border-radius: 5px;
+}
+.ContactUs form p{
+  color: grey;
+}
+.ContactUs form .tagline{
+  font-size: 22px;
+}
+.ContactUs form input:focus label{
+  color: #dd2476;
+}
+.ContactUs form input,textarea{
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  background-color: transparent;
+  outline: none;
+  height: 20px;
+  transition: .5s ease-in-out;
+  width: 100%;
+}
+.ContactUs form input:focus,textarea:focus{
+  height: 30px;
+  border-bottom: 1px solid #dd2476;
+  background-color: transparent;
+}
+nav ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
+  gap: 5rem;
+  font-size: 18px;
+  font-weight: 500;
+  list-style: none;
 }
-
-.App-link {
-  color: #61dafb;
+.imge,.imge2 img{
+  border-radius: 18px;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imge,.imge2 img:hover{
+ background-image: linear-gradient(top #dd2476);
+}
+.imge{
+  background-color: #6ab5b96e;
+  border-radius: 10px;
+}
+.imge2{
+  background-color: #dd24772a;
+  border-radius: 10px;
 }
